@@ -1,0 +1,12 @@
+{% extends "monTodo/base.html" %}
+
+{% block content %}
+
+    {% for todo in todos %}
+        <p>{{ todo.titre }}</p>
+        <p>{{ todo.descr }}</p>
+        <p>{{ todo.fait_le }}</p>
+        <br/>
+    {% endfor %}
+
+{% endblock %}
